@@ -1,0 +1,8 @@
+.name-container {
+    flex-direction: column;
+}
+
+.query-type {
+    flex-direction: column;
+    gap: 2px;
+}

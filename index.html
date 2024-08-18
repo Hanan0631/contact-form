@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" media="(max-width:480px)" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="name-container">
+        <div class="first-name">
+          <label for="first-name"> First Name <sup>*</sup> </label>
+          <input type="text" id="first-name" required />
+          <p class="first-name-error">This field is required</p>
+        </div>
+        <div class="last-name">
+          <label for="last-name"> Last Name <sup>*</sup></label>
+          <input type="text" id="last-name" required />
+          <p class="last-name-error">This field is required</p>
+        </div>
+      </div>
+      <div class="email-container">
+        <label for="email"> Email Address <sup>*</sup></label>
+        <input type="text" id="email" required />
+        <p class="email-error">This field is required</p>
+        <p class="email-validation-error">Please enter a valid email address</p>
+      </div>
+      <div class="query-type-container">
+        <p>Query Type <sup>*</sup></p>
+        <div class="query-type">
+          <div class="general-enquiry">
+            <input type="radio" name="query-type" id="general-enquiry" />
+            General Enquiry
+          </div>
+          <div class="support-request">
+            <input type="radio" name="query-type" id="support-request" />
+            Support Request
+          </div>
+        </div>
+        <p class="query-type-error">Please select a query type</p>
+      </div>
+      <div class="message-container">
+        <p>Message <sup>*</sup></p>
+        <div contenteditable="true"></div>
+        <p class="message-error">This field is required</p>
+      </div>
+      <div class="consent-container">
+        <div class="consent">
+          <input type="checkbox" />
+          <p>I consent to being contacted by the team <sup>*</sup></p>
+        </div>
+        <p class="consent-error">
+          To submit this form, please consent to being contacted
+        </p>
+      </div>
+
+      <button>Submit</button>
+      <!-- Message Sent!
+      Thanks for completing the form. We'll be in touch soon! -->
+    </div>
+    <div class="toast-message">
+      <div>
+        <img src="./assets//images/icon-success-check.svg" />
+        <p>Message Sent!</p>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <script src="./js/scrtipt.js"></script>
+  </body>
+</html>
